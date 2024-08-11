@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+    opacity: 0;
+    animation: header 1s ease-out forwards;
+}
+header div{
+    text-align: end;
+}
+
+header div .hour{
+    font-size: 2em;
+    opacity: .8;
+}
+.container{
+    height: 80vh;
+    width: 100%;
+    background-color: #002266;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container h2{
+    color:#fff;
+    text-align: center;
+}
+
+.options{
+    width: 40%;
+    height: 70%;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 48px;
+    list-style: none;
+    user-select: none;
+    text-align: center;
+}
+
+.options li{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    background-color: #fff;
+    animation: appear .4s ease-out forwards ;
+    animation-delay: calc(var(--i) * .1s);
+    opacity: 0;
+    transition: .1s;
+}
+
+.options li:hover{
+    cursor: pointer;
+    background-color: #aaaaff;
+}
+
+
+.options .retirar{
+    background: #00aaee;
+    color: #fff;
+}
+
+.options .retirar:hover{
+    background-color: #0066aa;
+}
+
+.options .salir{
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 2;
+    background-color:#ff0055 ;
+    color: #fff;
+}
+.options .salir:hover{
+    background-color: #cc0033;
+}
+
+@keyframes header{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0%{
+        transform: scale(.3);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

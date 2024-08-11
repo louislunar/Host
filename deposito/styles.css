@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    user-select: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #050518;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+    opacity: 0;
+    animation: header 1s ease-out forwards;
+}
+header div{
+    color: #fff;
+    text-align: end;
+}
+.logo{
+    height: 10vh;
+}
+
+header div .hour{
+    font-size: 2em;
+    opacity: .8;
+}
+.container{
+    flex: 1;
+    width: 100%;
+    background-color: #02023e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.container h2{
+    color: #fff;
+    position: absolute;
+    top:10%;
+}
+
+.lyris{
+    color: #fff;
+}
+
+.box{
+    width: 70%;
+    height:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box div{
+    width: 40%;
+    height: 100%;
+}
+
+.box .numbers{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.box .numbers div{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.box .numbers div:hover{
+    cursor: pointer;
+    background-color: #aaa;
+}
+
+.box .retirar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+}
+
+
+.box .retirar div{
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+}
+.saldo{
+    font-size: 1.5em;
+}
+.box .retirar .btnBox{
+    width: 80%;
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    gap: 30px;
+}
+.box .retirar .btnBox div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.box .retirar .btnBox .btn1{
+    flex: 2;
+}
+.box .retirar .btnBox .btn1:hover{
+    background-color: #333cc4;
+    color: #fff;
+}
+.box .retirar .btnBox .btn2{
+    flex: 1;
+
+}
+.box .retirar .btnBox .btn2:hover{
+   background-color: rgb(90, 14, 14);
+   color: #fff;
+
+}
+
+
+.logout{
+    display: flex;
+    padding: 20px;
+    background-color: #f11;
+    color: #fff;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    gap: 10px;
+    border-radius: 10px;
+}
+.logout:hover{
+    cursor: pointer;
+    background-color: #b11;
+}
+.logout img{
+    width: 20px;
+    height: 20px;
+}
+.logout div{
+    color: #fff;
+}
+
+
+
+@keyframes header{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0%{
+        transform: scale(.3);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
