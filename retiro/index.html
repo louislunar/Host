@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Banco Artemisa - Retiro</title>
 </head>
+
 <body>
     <header>
         <img class="logo" src="../Artemisa logo/ARTEMISA1-removebg-preview.png" alt="">
@@ -17,32 +19,51 @@
     </header>
     <div class="container">
         <a href="../retirar/index.html">
-           <div class="logout">
-            <img src="./logout.png" alt="img">
-            <div>Salir</div>
-        </div> 
+            <div class="logout">
+                <img src="./logout.png" alt="img">
+                <div>Salir</div>
+            </div>
         </a>
-        
-       <h2>Retiro de Dinero</h2>
-       <div class="box">
-        <div class="numbers">
-            <div>2BS</div>
-            <div>5BS</div>
-            <div>10BS</div>
-            <div>20BS</div>
-            <div>50BS</div>
-            <div>100BS</div>
-        </div>
-        <div class="retirar">
-            <div class="saldo">Saldo disponible:500BS</div>
-            <div class="saldo">Saldo a retirar: </div>
-            <div class="btnBox">
-                <div class="btn1">Retirar</div>
-                <div class="btn2">Borrar</div>
+
+        <h2>Retiro de Dinero</h2>
+        <div class="box">
+            <div class="numbers">
+                <div>2BS</div>
+                <div>5BS</div>
+                <div>10BS</div>
+                <div>20BS</div>
+                <div>50BS</div>
+                <div>100BS</div>
+            </div>
+            <div class="retirar">
+                <div class="saldo">Saldo disponible: 500 BS</div>
+                <div class="saldo">Saldo a retirar: </div>
+                <div class="btnBox">
+                    <label for="btn">Retirar</label>
+                    <div class="btn2">Borrar</div>
+                </div>
             </div>
         </div>
-       </div>
+    </div>
+    <!-- ventana modal -->
+    <input type="checkbox" id="btn">
+    <div class="container-modal">
+        <div class="content-modal">
+
+            <img src="../Artemisa logo/check.png" alt="" class="check">
+            <h3>¡Listo!</h3>
+            <p>Operación realizada con satisfacción.</p>
+
+            <div class="btn-cerrar">
+                <label for="btn">
+                    <a href="../index.html">Salir</a>
+                </label>
+            </div>
+        </div>
 
     </div>
+    <!-- Fin Ventana Modal -->
+
 </body>
+
 </html>

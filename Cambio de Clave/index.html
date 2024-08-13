@@ -22,21 +22,43 @@
         <div class="options">
             <form action="">
                 <div class="inputBox">
-                    <label for="">Ingresar Nueva Clave:</label>
-                    <input type="text" id="">
+                    <div class="input-field">
+                        <input type="text" class="input" id="New" required autocomplete="off">
+                        <label class="new" for="">Ingresar Nueva Clave:</label>
+                    </div>
+                    
                 </div>
                 <div class="inputBox">
-                    <label for="">Confirmar Nueva Clave:</label>
-                    <input type="text" id="">
+                    <div class="input-field">                        
+                        <input type="password" class="input" id="password" required> 
+                        <label class="clave" for="">Confirmar Nueva Clave:</label>
+                    </div>
+                    
                 </div>
             </form>
             <div class="btnbox">
-                <a href="../clave/index.html"><div class="btn">CONTINUAR</div></a>               
+                <label for="btn">Continuar</label>               
+            </div>
+        </div>
+    </div>
+    <!-- ventana modal -->
+    <input type="checkbox" id="btn">
+    <div class="container-modal">
+        <div class="content-modal">
+            <img src="../Artemisa logo/check.png" alt="" class="check">
+            <h3>¡Listo!</h3>
+            <p>Operación realizada con satisfacción.</p>
+            
+            <div class="btn-cerrar">
+                <label for="btn">
+                  <a href="../index.html">Cerrar</a>
+                </label>  
             </div>
         </div>
 
-
     </div>
+    <!-- Fin Ventana Modal -->
+
 </body=>
 
 </html>

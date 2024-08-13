@@ -164,3 +164,45 @@ a{
         opacity: 1;
     }
 }
+
+/* responsive */
+
+@media screen and (max-width:800px) {
+
+    .logo {
+        height: 11vh;
+        margin-left: -35px;
+    }
+
+    header div{
+        margin-left: 10px;
+    }
+
+    header div .hour{
+        font-size: 1.5em;
+    }
+    header .text{
+        font-size: .9em ;
+    }
+    
+    .logout {
+        padding: 10px;
+        left: 20px;
+        top: 10px;
+        gap: 10px;
+    }
+
+    .logout div {
+        font-size: 15px;
+    }
+
+    .btnbox{
+        width: 20vh;
+        display: flex;
+        gap: 20px;
+    }
+    .options form{
+        gap: 15vh;
+    }
+
+}
